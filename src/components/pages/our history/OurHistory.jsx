@@ -28,7 +28,7 @@ const OurHistory = () => {
           {/* right Section */}
           <div className="p-4">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-orange rounded-full "></div>
+              <div className="w-3 h-3 bg-orange-500 rounded-full "></div>
               <div className="text-neutral-700 text-lg font-medium ">
                 Founder
               </div>
@@ -68,7 +68,7 @@ const OurHistory = () => {
           {/* left Section */}
           <div className="p-4">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-orange rounded-full "></div>
+              <div className="w-3 h-3 bg-orange-500 rounded-full "></div>
               <div className="text-neutral-700 text-lg font-medium ">
                 Co-founder and Former President of the Organization
               </div>
@@ -115,7 +115,7 @@ const OurHistory = () => {
 
 
       {/* our guruji */}
-      <div className="bg-orange">
+      <div className="bg-orange-500">
         <div className="xl:py-36 py-16 max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container">
           <div className="flex flex-col xl:flex-row gap-y-8 justify-between ">
             {/* left section */}
@@ -128,7 +128,7 @@ const OurHistory = () => {
                 harum aperiam obcaecati quo dolor cumque libero, similique error
                 perferendis molestiae.
               </div>
-              <button className="bg-white text-orange px-8 py-2 rounded-md">
+              <button className="bg-white text-orange-500 px-8 py-2 rounded-md">
                 Know More
               </button>
             </div>

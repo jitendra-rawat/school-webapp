@@ -1,3 +1,4 @@
+
 // src/SuccessStoriesSection.js
 
 import React from "react";
@@ -39,7 +40,7 @@ function SuccessStory() {
   return (
     <div className=" bg-gray-100 min-h-screen px-8 py-16">
       <div className="max-w-7xl mx-auto container">
-        <h2 className="text-3xl font-bold mb-8 text-center text-orange">
+        <h2 className="text-3xl font-bold mb-8 text-center text-orange-500">
           Success Stories
         </h2>
         {successStoriesData.map((story, index) => (

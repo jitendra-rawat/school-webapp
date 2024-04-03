@@ -40,7 +40,7 @@ After establishing his glory in you, Swamiji became Brahmalin in the year 1970. 
             </p>
 
         <Link to={'/our-history'}>
-          <div class=" py-4 w-[216px] h-[61px] px-4  bg-orange rounded-[50px] border border-white justify-center items-center gap-2.5 inline-flex">
+          <div class=" py-4 w-[216px] h-[61px] px-4  bg-orange-500 rounded-[50px] border border-white justify-center items-center gap-2.5 inline-flex">
   <div class="text-white text-xs font-medium ">Visit Our History Now</div>
 </div>
 

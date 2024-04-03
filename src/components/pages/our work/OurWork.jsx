@@ -77,7 +77,7 @@ const OurWork = () => {
      {/* banner */}
 
 
-       <div className='bg-orange py-20 '>
+       <div className='bg-orange-500 py-20 '>
 
         <div className='max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container'>
 

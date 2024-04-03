@@ -115,7 +115,7 @@ const Card = ({ imageSrc, heading, buttonText }) => {
         <img className="w-[373px] h-[293px] object-cover" src={imageSrc} alt="Card" />
   
     <Link to={'/make-donation'}>
-     <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange p-4 rounded-full flex items-center justify-center">
+     <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 p-4 rounded-full flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
             <mask id="path-1-inside-1_337_674" fill="white">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88909 2.11091C-0.258796 4.2588 -0.258796 7.7412 1.88909 9.88909L10.0208 18.0208C10.4113 18.4113 11.0445 18.4113 11.435 18.0208L11.4448 18.011C11.5583 17.9624 11.6647 17.8917 11.7574 17.799L19.8891 9.66726C22.037 7.51938 22.037 4.03697 19.8891 1.88909C17.7412 -0.258796 14.2588 -0.258796 12.1109 1.88909L10.7782 3.22182L9.66726 2.11091C7.51938 -0.0369717 4.03697 -0.036972 1.88909 2.11091Z"/>

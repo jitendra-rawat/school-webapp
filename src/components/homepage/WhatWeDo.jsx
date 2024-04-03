@@ -52,7 +52,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold  ">Entertainment and Sports</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Entertainment and Sports</div>
 <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">The school provides radios, tape recorders, TVs, and indoor games. Students participate in sports and music competitions for holistic development.
 
 </div>
@@ -72,7 +72,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold  "> Medical Arrangement</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold  "> Medical Arrangement</div>
 <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">A part-time MBBS doctor conducts weekly health check-ups, and a dispensary provides medicines and general medical equipment.</div>
 </div>
 
@@ -89,7 +89,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold  ">  Mess Arrangement</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold  ">  Mess Arrangement</div>
 <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">The school's mess accommodates 200 students, offering regular meals and special arrangements twice a week.</div>
 </div>
 
@@ -109,7 +109,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold  ">Hostel Arrangement</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Hostel Arrangement</div>
 <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">A separate hostel for blind students with airy rooms, toilets, and bathrooms accommodates about 150 students, with dedicated staff.</div>
 </div>
 
@@ -152,7 +152,7 @@ const CarouselComponent = () => {
 </svg>
 
    <div>
-   <div class="text-orange text-lg lg:text-2xl font-bold  ">Education</div>
+   <div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Education</div>
    <div class=" text-zinc-600 text-base font-normal font-roboto leading-relaxed">The school provides regular classes from grade 1 to grade 10, employing trained teachers. The curriculum, approved by the Education Department, Uttarakhand, is taught in Braille script</div>
    </div>
 
@@ -169,7 +169,7 @@ const CarouselComponent = () => {
 </svg>
 
    <div>
-   <div class="text-orange text-lg lg:text-2xl font-bold ">Music Education</div>
+   <div class="text-orange-500 text-lg lg:text-2xl font-bold ">Music Education</div>
    <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">Students receive music education in singing and playing instruments, following the curriculum of Prayag Sangeet Samiti University, Allahabad, with proper instruments provided.</div>
    </div>
 
@@ -189,7 +189,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold ">Typing and Computer Training</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold ">Typing and Computer Training</div>
 <div class=" text-zinc-600 text-base font-normal leading-relaxed font-roboto">To promote self-reliance, typing, and computer training started in 2000, equipped with English and Hindi typing machines and a qualified instructor.</div>
 </div>
 
@@ -207,7 +207,7 @@ const CarouselComponent = () => {
 </svg>
 
    <div>
-   <div class="text-orange text-lg lg:text-2xl font-bold  ">Handicraft Training</div>
+   <div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Handicraft Training</div>
    <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">Blind children are trained in handicrafts like basket making, chair weaving, and candle making alongside regular education</div>
    </div>
 
@@ -225,7 +225,7 @@ const CarouselComponent = () => {
 </svg>
 
    <div>
-   <div class="text-orange text-lg lg:text-2xl font-bold  ">Spinning Weaving Training</div>
+   <div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Spinning Weaving Training</div>
    <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">Training in spinning and weaving, creating items like bed sheets and mats, helps blind children gain skills for independent living.</div>
    </div>
 
@@ -243,7 +243,7 @@ const CarouselComponent = () => {
 </svg>
 
 <div>
-<div class="text-orange text-lg lg:text-2xl font-bold  ">Library and Reading Room</div>
+<div class="text-orange-500 text-lg lg:text-2xl font-bold  ">Library and Reading Room</div>
 <div class=" text-zinc-600 text-base font-normal  leading-relaxed font-roboto">The well-maintained library has around 2000 books in Braille and 1000 cited books, along with newspapers and magazines.</div>
 </div>
 

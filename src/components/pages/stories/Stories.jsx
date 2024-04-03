@@ -97,7 +97,7 @@ const Testimonials = () => {
             <div className="flex items-center">
                
                <div className="">
-                 <div className=" text-orange text-xl  font-bold ">
+                 <div className=" text-orange-500 text-xl  font-bold ">
                    {testimonial.name}
                  </div>
                  <div className="py-2 text-black text-base font-normal ">{testimonial.designation}</div>

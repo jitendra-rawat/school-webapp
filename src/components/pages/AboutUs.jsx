@@ -44,7 +44,7 @@ function AboutUs() {
           {/* right Section */}
           <div className=" p-4">
           <div className="flex items-center gap-2">
-              <div class="w-3 h-3 bg-orange rounded-full "></div>
+              <div class="w-3 h-3 bg-orange-500 rounded-full "></div>
               <div class="text-neutral-700 text-lg font-medium ">
                 About our Mahila Trust Ashram
               </div>
@@ -135,7 +135,7 @@ function AboutUs() {
           {/* left Section with Placeholder Image */}
           <div className=" p-4">
             <div className="flex items-center gap-2">
-              <div class="w-3 h-3 bg-orange rounded-full "></div>
+              <div class="w-3 h-3 bg-orange-500 rounded-full "></div>
               <div class="text-neutral-700 text-lg font-medium ">
                 About our School
               </div>

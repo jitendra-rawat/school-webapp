@@ -59,7 +59,7 @@ const Header = () => {
     
      <Link to={'/donation-page'}>
 
-     <div class="w-[202.78px] h-[65.78px] px-[42px] py-5 bg-orange rounded-full border border-white justify-center items-center gap-2.5 inline-flex">
+     <div class="w-[202.78px] h-[65.78px] px-[42px] py-5 bg-orange-500 rounded-full border border-white justify-center items-center gap-2.5 inline-flex">
      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
   <mask id="path-1-inside-1_337_3441" fill="white">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.38909 2.11091C0.241204 4.2588 0.241204 7.7412 2.38909 9.88909L10.5208 18.0208C10.9113 18.4113 11.5445 18.4113 11.935 18.0208L11.9448 18.011C12.0583 17.9624 12.1647 17.8917 12.2574 17.799L20.3891 9.66726C22.537 7.51938 22.537 4.03697 20.3891 1.88909C18.2412 -0.258796 14.7588 -0.258796 12.6109 1.88909L11.2782 3.22182L10.1673 2.11091C8.01938 -0.0369717 4.53697 -0.036972 2.38909 2.11091Z"/>
