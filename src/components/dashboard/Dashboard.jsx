@@ -73,7 +73,7 @@ const Dashboard = () => {
             {/* Dashboard Button */}
             <div
               className={`w-full  lg:w-[200px] flex gap-2 items-center rounded-xl px-32 md:px-72 py-4 lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'dashboard' ? 'bg-orange text-white' : ''
+                selectedButton === 'dashboard' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('dashboard')}
             >
@@ -84,7 +84,7 @@ const Dashboard = () => {
             {/* donation Button */}
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'donation' ? 'bg-orange text-white' : ''
+                selectedButton === 'donation' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('donation')}
             >
@@ -95,7 +95,7 @@ const Dashboard = () => {
             {/* make donation Button */}
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'makedonation' ? 'bg-orange text-white' : ''
+                selectedButton === 'makedonation' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('makedonation')}
             >
@@ -109,7 +109,7 @@ const Dashboard = () => {
 
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'messages' ? 'bg-orange text-white' : ''
+                selectedButton === 'messages' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('messages')}
             >
@@ -123,7 +123,7 @@ const Dashboard = () => {
 
              <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'addCategory' ? 'bg-orange text-white' : ''
+                selectedButton === 'addCategory' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('addCategory')}
             >
@@ -137,7 +137,7 @@ const Dashboard = () => {
             {/* testimonails section */}
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'testimonials' ? 'bg-orange text-white' : ''
+                selectedButton === 'testimonials' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('testimonials')}
             >
@@ -148,7 +148,7 @@ const Dashboard = () => {
             {/* write testimonials section */}
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'writetestimonials' ? 'bg-orange text-white' : ''
+                selectedButton === 'writetestimonials' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('writetestimonials')}
             >
@@ -159,7 +159,7 @@ const Dashboard = () => {
             {/* reset password */}
             <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'resetpassword' ? 'bg-orange text-white' : ''
+                selectedButton === 'resetpassword' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => handleButtonClick('resetpassword')}
             >
@@ -171,7 +171,7 @@ const Dashboard = () => {
 
     <div
               className={`w-full lg:w-[200px] flex gap-2 items-center rounded-xl md:px-72  px-32 py-4  lg:p-2 border-2 border-orange cursor-pointer ${
-                selectedButton === 'logout' ? 'bg-orange text-white' : ''
+                selectedButton === 'logout' ? 'bg-orange-500 text-white' : ''
               }`}
               onClick={() => { handleButtonClick('logout'); handleLogout(); }}
             >

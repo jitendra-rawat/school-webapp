@@ -105,7 +105,7 @@ const Login = () => {
             <div className='  '>
               <button
                 type='submit'
-                className='group bg-orange rounded-full relative w-[300px] lg:w-[400px]   flex justify-center py-2 px-4 border border-transparent text-sm font-medium  text-white   focus:outline-none '
+                className='group bg-orange-500 rounded-full relative w-[300px] lg:w-[400px]   flex justify-center py-2 px-4 border border-transparent text-sm font-medium  text-white   focus:outline-none '
               >
                 Login
               </button>

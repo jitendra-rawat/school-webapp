@@ -278,7 +278,7 @@ const MakeDonation = () => {
 
 onClick={handleSubmit}
             type="submit"
-            className=" bg-orange w-[300px]   text-white py-2 px-16 rounded-md hover:bg-gray-500 focus:outline-none focus:shadow-outline-blue"
+            className=" bg-orange-500 w-[300px]   text-white py-2 px-16 rounded-md hover:bg-gray-500 focus:outline-none focus:shadow-outline-blue"
           >
             Donate Now
           </button>

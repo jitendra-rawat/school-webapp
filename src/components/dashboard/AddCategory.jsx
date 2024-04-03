@@ -101,7 +101,7 @@ const AddCategory = () => {
 
         <button
           type="submit"
-          className="bg-orange text-white p-4 rounded focus:outline-none hover:from-orange"
+          className="bg-orange-500 text-white p-4 rounded focus:outline-none hover:from-orange"
         >
           Save
         </button>

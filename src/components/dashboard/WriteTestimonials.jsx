@@ -80,7 +80,7 @@ const Testimonial = () => {
         ))}
         <button
           type="submit"
-          className="bg-orange text-white p-4 rounded focus:outline-none focus:ring focus:border-orange hover:from-orange"
+          className="bg-orange-500 text-white p-4 rounded focus:outline-none focus:ring focus:border-orange hover:from-orange"
         >
           Submit Testimonial
         </button>
