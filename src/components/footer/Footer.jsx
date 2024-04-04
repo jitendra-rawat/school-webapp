@@ -36,7 +36,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-2">Contact Details</h4>
           <p className='py-1 text-white text-sm font-normal'>Email: info@ajarblindschool.com</p>
           <p className='py-1 text-white text-sm font-normal'>Phone: 0091-1334-260203, 216409, 216410</p>
-          <p className='py-1 w-[325px]  text-white text-sm font-normal  leading-snug'>Address: SWAMI AJARANAND ANDH VIDYALAYA HIGH SCHOOLSapt Sarover, Post-Sadhubela,Haridwar Uttarakhand-249410 INDIA</p>
+          <p className='py-1 w-[325px]  text-white text-sm font-normal  leading-snug'>Address: SWAMI AJARANAND ANDH VIDYALAYA HIGH SCHOOL Sapt Sarover,<br /> Post-Sadhubela,Haridwar Uttarakhand <br /> 249410 INDIA</p>
         </div>
       </div>
     </footer>
