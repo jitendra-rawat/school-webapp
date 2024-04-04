@@ -5,6 +5,7 @@ import { server } from '../../utils';
 
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
+import { toast } from 'react-toastify';
 
 const MakeDonation = () => {
 
@@ -25,8 +26,38 @@ const MakeDonation = () => {
     specificDate: new Date('2024-01-15'),
   });
 
+  const [emailError, setEmailError] = useState('');
+  const [mobileError, setMobileError] = useState('')
+  const [submitError, setSubmitError] = useState('')
+
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobileRegex = /^[0-9]{10}$/;
+  
+  
+    let emailError = '';
+    let mobileError = '';
+  
+   
+    if (name === 'email') {
+      if (!emailRegex.test(value)) {
+        emailError = 'Please enter a valid email address';
+      }
+    } else if (name === 'mobile') {
+      if (!mobileRegex.test(value)) {
+        mobileError = 'Please enter a 10-digit mobile number';
+      }
+    }
+  
+   
+    setEmailError(emailError);
+    setMobileError(mobileError);
+
 
     if (name === 'donationCategory') {
       const selectedCategory = donationCategories.find(category => category.name === value);
@@ -80,7 +111,7 @@ const MakeDonation = () => {
         }
       );
 
-      // console.log('API response of make donation:', response.data);
+    //  console.log('API response of make donation:', response.data);
 
       setFormData({
         name: '',
@@ -94,7 +125,10 @@ const MakeDonation = () => {
         type: '',
       });
 
+      toast.success("Donation has been Done Successfully")
+
     } catch (error) {
+      setSubmitError("Please Fill all the Fields")
       console.error('Error submitting form:', error);
     }
   };
@@ -121,6 +155,14 @@ const MakeDonation = () => {
     }
   };
 
+
+  // Function to render label with star
+const renderLabel = (text) => (
+  <label className="block text-sm font-semibold text-gray-600 mb-1">
+    {text} <span className="text-red-500">*</span>
+  </label>
+);
+
     
   return (
     <div className="container mx-auto px-4 py-16 max-w-sm lg:max-w-2xl ">
@@ -129,88 +171,81 @@ const MakeDonation = () => {
 
         {/* Name */}
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-semibold text-gray-600 mb-1">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
+  {renderLabel("Name")}
+  <input
+    type="text"
+    id="name"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+</div>
 
-        {/* Address */}
-        <div className="mb-4">
-          <label htmlFor="address" className="block text-sm font-semibold text-gray-600 mb-1">Address</label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
+             {/* Address */}
+<div className="mb-4">
+  {renderLabel("Address")}
+  <input
+    type="text"
+    id="address"
+    name="address"
+    value={formData.address}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+</div>
 
+{/* Email */}
+<div className="mb-4">
+  {renderLabel("Email Address")}
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+    {emailError && <p className="text-red-500">{emailError}</p>}
+</div>
 
-    {/* email */}
-    <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-semibold text-gray-600 mb-1">E-mail Adderess</label>
-          <input
-            type="text"
-            
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
+{/* Mobile Number */}
+<div className="mb-4">
+  {renderLabel("Mobile Number")}
+  <input
+    type="tel"
+    id="mobile"
+    name="mobile"
+    value={formData.mobile}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
 
-
-
-        {/* Mobile Number */}
-        <div className="mb-4">
-          <label htmlFor="mobileNumber" className="block text-sm font-semibold text-gray-600 mb-1">Mobile Number</label>
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
-
-
-        {/* Pan card */}
+{mobileError && <p className="text-red-500">{mobileError}</p>}
+</div>
 
 
-        <div className="mb-4">
-          <label htmlFor="ssn" className="block text-sm font-semibold text-gray-600 mb-1">PAN/SSN</label>
-          <input
-            type="number"
-         
-            name="pan"
-            value={formData.pan}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
+   {/* Pan Card */}
+<div className="mb-4">
+  {renderLabel("PAN/SSN")}
+  <input
+    type="number"
+    id="pan"
+    name="pan"
+    value={formData.pan}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+</div>
 
-
- 
-    {/* Choose Donation Name */}
-
-    <div className="mb-4">
-  <label htmlFor="donationCategory" className="block text-sm  text-gray-600 mb-1">
-    Choose Donation Name
-  </label>
+{/* Choose Donation Name */}
+<div className="mb-4">
+  {renderLabel("Choose Donation Category")}
   <select
     id="donationCategory"
     name="donation_name"
@@ -230,46 +265,40 @@ const MakeDonation = () => {
    
 
 
-  {/* donation type */}
+   {/* Donation Type */}
+<div className="mb-4">
+  {renderLabel("Donation Type")}
+  <input
+    type="text"
+    id="donation_type"
+    name="donation_type"
+    value={formData.donation_type}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+</div>
 
+{/* Donation Amount */}
+<div className="mb-4">
+  {renderLabel("Donation Amount")}
+  <input
+    type="text"
+    id="donationAmount"
+    name="donation"
+    value={formData.donation}
+    onChange={handleChange}
+    className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
+    required
+  />
+</div>
 
-  <div className="mb-4">
-          <label htmlFor="donation_type" className="block text-sm font-semibold text-gray-600 mb-1">Donation Type</label>
-          <input
-            type="text"
-            name="donation_type"
-            value={formData.donation_type}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-         
-          />
-        </div>
+          
 
-       
-  {/* choose date */}
-
-
-   
-     
-
-
-
-
-
-           {/* Donation Amount */}
-           <div className="mb-4">
-          <label htmlFor="donationAmount" className="block text-sm font-semibold text-gray-600 mb-1">Donation Amount</label>
-          <input
-            type="text"
-            id="donationAmount"
-            name="donation"
-            value={formData.donation}
-            onChange={handleChange}
-            className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
-            required
-          />
-        </div>
+          <div>
+          {submitError && <p className="text-red-500">{submitError}</p>}
+          </div>
+  
 
 
         {/* Submit Button */}

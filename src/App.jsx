@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from "./components/header/Navbar";
 import Scroll from './components/other/Scroll'
@@ -69,6 +71,7 @@ function App() {
       </Routes>
       <Footer />
       <Scroll />
+      <ToastContainer />
     </Router>
   );
 }

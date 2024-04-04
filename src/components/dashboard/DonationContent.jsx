@@ -6,17 +6,21 @@ import { server } from '../../utils';
 
 const DonationTable = ({ data }) => {
   return (
-    <div className="overflow-x-auto overflow-y-auto max-h-[600px]">
+    <div className="overflow-x-auto overflow-auto h-screen">
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
           <tr>
-            <th className="border-b px-6 py-4">Name</th>
-            <th className="border-b px-6 py-4">Address</th>
-            <th className="border-b px-6 py-4">Mobile Number</th>
-            <th className="border-b px-6 py-4">PAN</th>
-            <th className="border-b px-6 py-4">Donation Amount</th>
-            <th className="border-b px-6 py-4">Donation Method</th>
-            <th className="border-b px-6 py-4">Date</th>
+            <th className="border-b px-6 py-4 text-base">Name</th>
+            <th className="border-b px-6 py-4 text-base">Address</th>
+            <th className="border-b px-6 py-4 text-base">Mobile Number</th>
+            <th className="border-b px-6 py-4 text-base">PAN</th>
+            <th className="border-b px-6 py-4 text-base">Amount</th>
+        
+            <th className="border-b px-6 py-4 text-base">Donation Name</th>
+          
+            <th className="border-b px-6 py-4 text-base">Category</th>
+            <th className="border-b px-6 py-4 text-base">Method</th>
+       
           </tr>
         </thead>
         <tbody>
@@ -27,8 +31,11 @@ const DonationTable = ({ data }) => {
               <td className="border-b px-6 py-4 text-sm">{item.mobile}</td>
               <td className="border-b px-6 py-4 text-sm">{item.pan}</td>
               <td className="border-b px-6 py-4 text-sm">₹{item.donation}</td>
+              <td className="border-b px-6 py-4 text-sm">{item.donation_name}</td>
+              <td className="border-b px-6 py-4 text-sm">{item.donation_type}</td>
               <td className="border-b px-6 py-4 text-sm">{item.type}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.date}</td>
+
+        
             </tr>
           ))}
         </tbody>
