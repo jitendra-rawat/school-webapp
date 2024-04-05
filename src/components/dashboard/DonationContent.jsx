@@ -46,7 +46,7 @@ const UserData = () => {
     }
   }, [accessToken]);
 
-  // Pagination logic
+  
   const pagesVisited = pageNumber * usersPerPage;
   const pageCount = donationData ? Math.ceil(donationData.length / usersPerPage) : 0;
 
@@ -94,7 +94,7 @@ export default UserData;
 const DonationTable = ({ data }) => {
   return (
     <div className=" overflow-auto h-screen">
-      <table className="min-w-full bg-white border border-gray-300">
+      <table className="w-full bg-white border border-gray-300">
         <thead>
           <tr>
             <th className="border-b px-2 py-4 text-sm">Name</th>

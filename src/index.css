@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+.custom-bg {
+  background-image: url("./components/assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.donation-bg {
+  background-image: url("https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/01/15/36/kid-1365105_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.infra-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/08/09/52/chalk-4829602_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.mission-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/17/09/30/target-1747234_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.success-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.work-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/05/13/05/boy-317041_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.history-bg {
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/17/16/03/compass-3408928_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

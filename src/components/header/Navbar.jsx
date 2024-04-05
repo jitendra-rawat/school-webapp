@@ -63,7 +63,7 @@ function Navbar() {
 
 </Link>
 
-<div >
+<div className='p-2' >
 <Translate />
 </div>
 
@@ -171,7 +171,7 @@ function Navbar() {
                   <div className="flow-root">
                     <Link
                     onClick={() => setOpen(false)}
-                      to={"/infrastructure"}
+                      to={"/our-infrastructure"}
                       className="text-sm font-medium text-gray-900 "
                     >
                

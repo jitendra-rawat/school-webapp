@@ -65,7 +65,7 @@ const Contact = () => {
    
       );
 
-      // console.log('Conatct Message sent  successfully:', response.data);
+      
 
    
       setFormData({
