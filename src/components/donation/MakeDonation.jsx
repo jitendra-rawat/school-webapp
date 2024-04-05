@@ -109,6 +109,8 @@ const MakeDonation = () => {
         donation: '',
         donation_type: '',
         type: '',
+        chooseSpecificDate: '',
+        specificDate: '',
       });
 
       toast.success('Donation has been done successfully');
@@ -266,7 +268,10 @@ const MakeDonation = () => {
           />
         </div>
 
+
+
         {/* Choose Specific Date */}
+        
         <div className="mb-4">
           {renderLabel('Choose Specific Date')}
           <select

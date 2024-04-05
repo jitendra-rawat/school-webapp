@@ -15,6 +15,9 @@ const Contact = () => {
 
 
   const [messageSent, setMessageSent] = useState(false);
+  const [emailError, setEmailError] = useState('');
+  const [mobileError, setMobileError] = useState('');
+  const [submitError, setSubmitError] = useState('');
   
   const [formData, setFormData] = useState({
     name: '',
@@ -24,6 +27,27 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
+
+    const { name, value } = e.target;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobileRegex = /^[0-9]{10}$/;
+
+    let emailError = '';
+    let mobileError = '';
+
+    if (name === 'email') {
+      if (!emailRegex.test(value)) {
+        emailError = 'Please enter a valid email address';
+      }
+    } else if (name === 'mobile') {
+      if (!mobileRegex.test(value)) {
+        mobileError = 'Please enter a 10-digit mobile number';
+      }
+    }
+
+    setEmailError(emailError);
+    setMobileError(mobileError);
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -41,7 +65,7 @@ const Contact = () => {
    
       );
 
-      console.log('Conatct Message sent  successfully:', response.data);
+      // console.log('Conatct Message sent  successfully:', response.data);
 
    
       setFormData({
@@ -52,6 +76,7 @@ const Contact = () => {
       });
     } catch (error) {
       console.error('Error sending Contact Message :', error);
+      setSubmitError('Please Fill the all fields');
     }
 
 
@@ -112,12 +137,7 @@ const Contact = () => {
 
 
         <div className="py-8 lg:py-0 lg:w-1/2">
-        {messageSent ? (
-          <div>
-            <p className='text-lg text-green-600'>Your Message has been sent. Thanks For Contacting us! </p>
-          </div>
-        ) : (
-          <>
+
           <h2 className="text-2xl lg:text-2xl font-bold mb-4">Contact Us</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -132,6 +152,7 @@ const Contact = () => {
                 E-mail Address:
               </label>
               <input type="email" id="email" name='email'   onChange={handleChange} value={formData.email} className="mt-1 p-2 w-full border rounded" />
+              {emailError && <p className="text-red-500">{emailError}</p>}
             </div>
 
             <div className="mb-4">
@@ -139,6 +160,7 @@ const Contact = () => {
                 Mobile Number
               </label>
               <input type="number" id="mobile" name='mobile'   onChange={handleChange} value={formData.mobile} className="mt-1 p-2 w-full border rounded" />
+              {mobileError && <p className="text-red-500">{mobileError}</p>}
             </div>
 
             <div className="mb-4">
@@ -154,11 +176,11 @@ const Contact = () => {
 </div>
 
 
-
+{submitError && <p className="text-red-500 my-4">{submitError}</p>}
 
             <button
               type="submit"
-              className="bg-orange rounded-3xl text-white py-2 px-4 hover:bg-gray-900 transition-all duration-300"
+              className="bg-orange-500 rounded-3xl text-white py-2 px-4 hover:bg-gray-900 transition-all duration-300"
             >
               Send Message
             </button>
@@ -167,8 +189,8 @@ const Contact = () => {
 
             </form>
 
-            </>
-        )}
+     
+   
         </div>
       </div>
     </div>

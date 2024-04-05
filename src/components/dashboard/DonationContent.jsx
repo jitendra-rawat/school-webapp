@@ -6,7 +6,7 @@ import { server } from '../../utils';
 
 const UserData = () => {
   const { accessToken } = useAuth();
-  const [donationData, setDonationData] = useState(null); // Change initial state to null
+  const [donationData, setDonationData] = useState(null); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
@@ -62,7 +62,7 @@ const UserData = () => {
         <p className="text-center">Loading...</p>
       ) : error ? (
         <p className="text-center text-red-500">{error}</p>
-      ) : donationData ? ( // Conditionally render the pagination component
+      ) : donationData ? ( 
         <>
           <DonationTable
             data={donationData.slice(pagesVisited, pagesVisited + usersPerPage)}
@@ -77,6 +77,7 @@ const UserData = () => {
             nextLinkClassName={'pagination__link'}
             disabledClassName={'pagination__link--disabled'}
             activeClassName={'pagination__link--active'}
+            className='flex justify-center gap-4'
           />
         </>
       ) : (
@@ -92,36 +93,36 @@ export default UserData;
 
 const DonationTable = ({ data }) => {
   return (
-    <div className="overflow-x-auto overflow-auto h-screen">
+    <div className=" overflow-auto h-screen">
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
           <tr>
-            <th className="border-b px-6 py-4 text-base">Name</th>
-            <th className="border-b px-6 py-4 text-base">Address</th>
-            <th className="border-b px-6 py-4 text-base">Mobile Number</th>
-            <th className="border-b px-6 py-4 text-base">PAN</th>
-            <th className="border-b px-6 py-4 text-base">Amount</th>
+            <th className="border-b px-2 py-4 text-sm">Name</th>
+            <th className="border-b px-2 py-4 text-sm">Address</th>
+            <th className="border-b px-2 py-4 text-sm">Mobile Number</th>
+            <th className="border-b px-2 py-4 text-sm">PAN</th>
+            <th className="border-b px-2 py-4 text-sm">Amount</th>
         
-            <th className="border-b px-6 py-4 text-base">Donation Name</th>
+            <th className="border-b px-2 py-4 text-sm">Donation Name</th>
           
-            <th className="border-b px-6 py-4 text-base">Category</th>
-            <th className="border-b px-6 py-4 text-base">Method</th>
-            <th className="border-b px-6 py-4 text-base">Date</th>
+            <th className="border-b px-2 py-4 text-sm">Category</th>
+            <th className="border-b px-2 py-4 text-sm">Method</th>
+            <th className="border-b px-2 py-4 text-sm">Date</th>
        
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td className="border-b px-6 py-4 text-sm">{item.name}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.address}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.mobile}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.pan}</td>
-              <td className="border-b px-6 py-4 text-sm">₹{item.donation}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.donation_name}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.donation_type}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.type}</td>
-              <td className="border-b px-6 py-4 text-sm">{item.chooseSpecificDate}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.name}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.address}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.mobile}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.pan}</td>
+              <td className="border-b px-2 py-4 text-sm">₹{item.donation}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.donation_name}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.donation_type}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.type}</td>
+              <td className="border-b px-2 py-4 text-sm">{item.specificDate}</td>
 
         
             </tr>
