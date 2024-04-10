@@ -47,7 +47,7 @@ const MakeDonation = () => {
     setEmailError(emailError);
     setMobileError(mobileError);
 
-    if (name === 'donationCategory') {
+    if (name === 'donation_name') {
       const selectedCategory = donationCategories.find(
         (category) => category.name === value
       );
@@ -56,6 +56,7 @@ const MakeDonation = () => {
         ...prevData,
         donation_name: selectedCategory ? selectedCategory.name : '',
         donation_type: selectedCategory ? selectedCategory.type : '',
+        donation: selectedCategory ? selectedCategory.amount.toString() : '',
         [name]: value,
       }));
     } else {
@@ -134,6 +135,7 @@ const MakeDonation = () => {
       });
 
       setDonationCategories(response.data);
+      console.log(response.data)
     } catch (error) {
       console.error('Error Getting Donation Category:', error);
     }
@@ -226,7 +228,7 @@ const MakeDonation = () => {
           <select
             id="donationCategory"
             name="donation_name"
-            value={formData.donationCategory}
+            value={formData.donation_name}
             onChange={handleChange}
             className="w-[300px] lg:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
             required
@@ -265,6 +267,7 @@ const MakeDonation = () => {
             onChange={handleChange}
             className="w-[300px] lg:w-full  px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange"
             required
+            readOnly
           />
         </div>
 
