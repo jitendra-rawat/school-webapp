@@ -3,15 +3,9 @@ import React from "react";
 const SwamiDesk = () => {
   return (
     <section>
-      {/* banner */}
+    
 
-      <div className="py-20 xl:pt-48 history-bg bg-opacity-25">
-        <div className="max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container">
-          <p className="xl:py-24 xl:text-[50px] text-2xl font-extrabold text-white ">
-        A Message from the side of  Guruji
-          </p>
-        </div>
-      </div>
+
 
       {/* message */}
 
@@ -22,11 +16,11 @@ const SwamiDesk = () => {
           <div className="p-4 ">
          
 
-            <h1 className="mb-2  text-center font-sans text-gray-800 text-lg xl:text-4xl font-bold xl:leading-[57.60px]">
+            <h2 className="mb-2   text-center font-sans text-orange-500 text-lg xl:text-4xl font-bold xl:leading-[57.60px]">
               Shri Swami Ajaranand Ji Maharaj
-            </h1>
+            </h2>
 
-            <p className="mb-4 lg:text-center font-roboto text-black text-base xl:text-lg font-normal text-justify">
+            <p className="mb-16 lg:text-justify font-poppins text-black text-base xl:text-lg font-normal text-justify">
               I am delighted to share information about the organization after
               nearly two decades. Despite my busy schedule, I've made an effort
               to provide insights into the organization's activities, including
@@ -43,7 +37,7 @@ const SwamiDesk = () => {
               toward its noble objectives.
             </p>
 
-            <p className="mb-4 lg:text-right font-roboto text-black text-base xl:text-lg font-normal text-justify">Mahant Shri Swami Swayamanand Ji Maharaj <br />
+            <p className="mb-4 lg:text-right font-poppins text-black text-base xl:text-lg font-normal text-justify">Mahant Shri Swami Swayamanand Ji Maharaj <br />
 Chairman / President<br />
 Shri Ajradham Mahila Ashram Trust <br />
 Swami Ajranand Andh Vidyalaya High School <br />

@@ -8,13 +8,6 @@ const Donation = () => {
   return (
     <section>
 
-                         {/* header banner */}
-                         <div className='py-20 xl:pt-48 work-bg bg-opacity-25'>
-  <div className='max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container'>
-  <p className='xl:py-24 xl:text-[50px] text-2xl font-extrabold text-white '>Donation</p>
-  </div>
-
-</div>
       
 
 
@@ -23,18 +16,21 @@ const Donation = () => {
    <div className='py-20 max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container'>
 
 
+    <h2 className='text-4xl font-poppins font-bold text-center mb-8'>Support Us</h2>
+
+
    <div className="flex flex-col justify-between md:flex-row p-4  ">
       {/* Left Section */}
       <div className=" xl:p-4">
-        <h1 className=" mb-2 xl:w-[608px] text-gray-800 text-lg xl:text-5xl font-bold  xl:leading-[57.60px]">Some services we provide for our children</h1>
+        <h1 className=" mb-2 xl:w-[608px] text-gray-800 text-lg xl:text-5xl font-bold  xl:leading-[57.60px] font-poppins">Some services we provide for our children</h1>
        
-        <p className=" mb-4 xl:w-[608px] text-black text-lg font-normal text-justify">
+        <p className="font-poppins mb-4 xl:w-[608px] text-black text-lg font-normal text-justify">
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus esse consequuntur numquam assumenda, quia recusandae maiores sed! Quas iusto natus libero corrupti ipsa sint veritatis culpa, nostrum doloremque illum aliquid veniam distinctio dignissimos optio, ut vero voluptatem inventore delectus animi dolorem ab nobis! Magnam impedit adipisci iure sapiente molestiae.
         </p>
         <ul className="list-disc pl-4">
-          <li className='text-black text-sm font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
-          <li className='text-black text-sm font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
-          <li className='text-black text-sm font-normal  leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
+          <li className='text-black text-sm font-poppins font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
+          <li className='text-black text-sm font-poppins font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
+          <li className='text-black text-sm font-poppins font-normal  leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
         </ul>
     
       

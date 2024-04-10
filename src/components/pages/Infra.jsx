@@ -14,15 +14,15 @@ import InfraComp from "../infrastructure/InfraComp";
 
 const Card = ({ imageUrl, title, description }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md w-[400px] h-[600px] ">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md w-[400px] h-[550px] cursor-pointer">
       <img
         src={imageUrl}
         alt={title}
         className="w-full h-[300px] object-cover object-center"
       />
       <div className="p-4">
-        <h2 className="text-xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-700 text-justify text-sm font-roboto">{description}</p>
+        <h2 className="text-xl font-poppins font-bold mb-2">{title}</h2>
+        <p className="text-gray-700 text-justify text-sm font-poppins">{description}</p>
       </div>
     </div>
   );
@@ -97,27 +97,15 @@ const cardData = [
 const Infra = () => {
   return (
     <section className="">
-      <div className="py-20 xl:pt-48 infra-bg  bg-opacity-25">
-        <div className="max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container">
-          <p className="xl:py-24 xl:text-[50px] text-2xl font-extrabold text-white ">
-            Our Infrastructure
-          </p>
-        </div>
-      </div>
+
 
       {/* Our Infrastructure */}
       <div className="py-20 ">
-        <p className="pb-8 xl:max-w-6xl font-roboto text-center xl:text-left text-neutral-700 text-base xl:text-lg font-normal leading-[30px]  mx-auto">
-          We being a poor trust with very limited resources and without any
-          outside aid vis-a-vis the gigantic cause which we dream to pursue,
-          managed to make a beginning and our proud to mention some good
-          facilities we have been able to provide in our school in accordance to
-          our planned programmes. The Ajardham Mahila Ashram Trust having
-          following infrastructure for providing maximum comfort to Blind
-          Students residing and studying here.
-        </p>
+   
 
-        <div className="flex flex-wrap justify-center items-center gap-4">
+   <h2 className="font-poppins text-4xl font-bold text-center mb-8">Facilities</h2>
+
+        <div className="flex flex-wrap justify-center items-center gap-4 ">
           {cardData.map((card) => (
             <Card
               key={card.id}
@@ -130,9 +118,7 @@ const Infra = () => {
         </div>
       </div>
 
-      {/* passion */}
 
-      <InfraComp />
     </section>
   );
 };

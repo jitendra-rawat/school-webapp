@@ -3,11 +3,14 @@ import Header from '../header/Header'
 import WhatWeDo from './WhatWeDo'
 
 
-import Give from './Give'
-import Banner from './Banner'
-import Donate from './Donate'
-import Meet from './Meet'
-import Stories from './Stories'
+
+
+
+import Introduction from './Introduction'
+import About from './About'
+
+import Support from './Support'
+import Facilities from './Facilities'
 
 
 
@@ -19,17 +22,18 @@ const Home = () => {
 
     <Header />
 
-        <WhatWeDo />
+       <Introduction />
 
-        <Give />
+       <About />
 
-        <Banner />
+     <Facilities />
 
-        <Donate />
+       <Support />
 
-        <Meet />
+        
 
-        <Stories />
+       
+
    
     </div>
   )

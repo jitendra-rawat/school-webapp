@@ -47,14 +47,14 @@ function Navbar() {
           <div className='flex gap-x-4'>
 
 
-
+{/* 
           {!isAuthenticated && (
           <Link to={'/login'}  onClick={() => setDropdownOpen(false)} className="hidden font-roboto  md:block md:text-lg text-[16px] hover:text-orange text-black text-sm font-normal ">
 
             <button className='bg-orange-500 px-12 py-2 text-white border-2 border-orange rounded-full'>  Login</button>
           
           </Link>
-        )}
+        )} */}
 
 
 <Link to={'/make-donation'}  onClick={() => setDropdownOpen(false)} className="hidden md:block md:text-lg text-[16px] hover:text-orange text-black text-sm font-normal ">
@@ -63,9 +63,7 @@ function Navbar() {
 
 </Link>
 
-<div className='p-2' >
-<Translate />
-</div>
+
 
 
   
@@ -150,23 +148,12 @@ function Navbar() {
                   <div className="flow-root">
                     <Link
                     onClick={() => setOpen(false)}
-                      to={"/our-history"}
+                      to={"/about"}
                       className="text-sm font-medium text-gray-900 "
                     >
-          Our History
+          About Us
                     </Link>
                   </div>
-
-                  <div className="flow-root">
-                    <Link
-                    onClick={() => setOpen(false)}
-                      to={"/our-mission"}
-                      className="text-sm font-medium text-gray-900 "
-                    >
-                      Our Mission
-                    </Link>
-                  </div>
-
 
                   <div className="flow-root">
                     <Link
@@ -174,20 +161,13 @@ function Navbar() {
                       to={"/our-infrastructure"}
                       className="text-sm font-medium text-gray-900 "
                     >
-               
-            Our Infrastructure
+                    Facilities
                     </Link>
                   </div>
 
-                  <div className="flow-root">
-                    <Link
-                    onClick={() => setOpen(false)}
-                      to={"/our-work"}
-                      className="text-sm font-medium text-gray-900 "
-                    >
-        Our Work
-                    </Link>
-                  </div>
+
+
+              
 
                   <div className="flow-root">
                     <Link
@@ -199,15 +179,6 @@ function Navbar() {
                     </Link>
                   </div>
 
-                  <div className="flow-root">
-                    <Link
-                    onClick={() => setOpen(false)}
-                      to={"/success-stories"}
-                      className="text-sm font-medium text-gray-900 "
-                    >
-                     Our Success Stories
-                    </Link>
-                  </div>
 
 
                   <div className="flow-root">
@@ -245,56 +216,47 @@ function Navbar() {
       {/* bottom navbar */}
 
 
-      <div className=' py-2 lg:py-4  max-w-md md:max-w-2xl lg:max-w-6xl  mx-auto container  '>
+      <div className=' py-2   max-w-md md:max-w-2xl lg:max-w-5xl  mx-auto container  '>
 
 
-      <div className="hidden lg:flex lg:items-center lg:gap-6">
+      <div className="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
           
+            
 
-
-
-          <Link to={'/our-history'}  onClick={() => setDropdownOpen(false)} className=" font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-    Our History
+      <Link to={'/'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500   lg:text-lg  hover:text-orange  text-sm font-bold  ">
+Home
           </Link>
 
-       
-
-
-
-
-    <Link to={'/our-mission'}  onClick={() => setDropdownOpen(false)} className="font-roboto lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-       Our Mission
+        
+      <Link to={'/about'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500   lg:text-lg  hover:text-orange  text-sm font-bold  ">
+     About us
           </Link>
 
-          <Link to={'/our-infrastructure'}  onClick={() => setDropdownOpen(false)} className=" font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-       Our Infrastructure
-          </Link>
+   
 
-          <Link to={'/our-work'}  onClick={() => setDropdownOpen(false)} className=" font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-       Our Work
+   
+          <Link to={'/our-infrastructure'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500   lg:text-lg  hover:text-orange  text-sm font-bold  ">
+    Facilities
           </Link>
 
 
-          <Link to={'/donation'}  onClick={() => setDropdownOpen(false)} className="font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
+     
+
+
+          <Link to={'/donation'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500   lg:text-lg  hover:text-orange  text-sm font-bold  ">
       Support Us
           </Link>
 
 
-          <Link to={'/success-stories'}  onClick={() => setDropdownOpen(false)} className="font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-      Our  Stories
-          </Link>
-
-          <Link to={'/about'}  onClick={() => setDropdownOpen(false)} className="font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
-     About us
-          </Link>
 
 
-          <Link to={'/from-the-desk-of-swamiji'}  onClick={() => setDropdownOpen(false)} className="font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold ">
+
+          <Link to={'/from-the-desk-of-swamiji'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500  lg:text-lg  hover:text-orange  text-sm font-bold ">
   From the Desk of Swamiji
           </Link>
 
 
-          <Link to={'/contact'}  onClick={() => setDropdownOpen(false)} className="font-roboto  lg:textbase  hover:text-orange text-black text-sm font-bold  ">
+          <Link to={'/contact'}  onClick={() => setDropdownOpen(false)} className="font-poppins text-orange-500   lg:text-lg  hover:text-orange text-sm font-bold  ">
    Contact Us
           </Link>
 
@@ -303,11 +265,13 @@ function Navbar() {
      
 
           {isAuthenticated && (
-        <Link to={'/dashboard'}  onClick={() => setDropdownOpen(false)} className=" lg:textbase font-roboto    hover:text-orange text-black text-sm font-bold ">
+        <Link to={'/dashboard'}  onClick={() => setDropdownOpen(false)} className=" lg:text-lg font-poppins text-orange-500     hover:text-orange text-sm font-bold ">
           Admin Dashboard
         </Link>
       )}
 
+
+<Translate />
 
 
  

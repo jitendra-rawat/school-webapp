@@ -28,7 +28,7 @@ const Header = () => {
 
 
   
-    <div className=" lg:py-[30px] text-white lg:p-8 flex flex-col-reverse lg:flex-row lg:justify-between items-center max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
+    <div className=" lg:py-[30px] text-white  flex flex-col-reverse lg:flex-row lg:justify-between items-center max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
      
  {/* left section */}
 
