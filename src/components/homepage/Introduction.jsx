@@ -2,7 +2,7 @@ import React from 'react'
 
 const Introduction = () => {
   return (
-    <div className=" lg:py-[30px]   flex flex-col-reverse lg:flex-row lg:justify-between items-center max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
+    <div className=" lg:py-20   flex flex-col-reverse lg:flex-row lg:justify-between items-center max-w-sm   md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
        
           <div className='flex justify-between items-center lg:space-x-10'>
   

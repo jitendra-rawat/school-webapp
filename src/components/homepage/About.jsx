@@ -12,7 +12,12 @@ const About = () => {
   ];
 
   return (
-    <div className="lg:py-36  max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
+
+ <section className='bg-gray-100'>
+
+
+    
+    <div className="lg:py-20  max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
     
      <h2 className='text-2xl font-bold font-poppins mb-8'>About Us</h2>
 
@@ -33,6 +38,8 @@ const About = () => {
       ))}
     </div>
     </div>
+
+    </section>
   );
 }
 
