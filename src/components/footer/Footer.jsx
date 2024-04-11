@@ -3,6 +3,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaYoutube  } from "react-icons/fa";
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -52,9 +53,9 @@ const Footer = () => {
           <div className='py-2 lg:px-2 lg:py-0 lg:w-1/3 '>
 
           <h4 className="text-lg font-semibold mb-2 font-poppins ">Policy</h4>
-          <p className='py-1 text-white text-sm font-normal font-poppins'>Privacy Policy</p>
-          <p className='py-1 text-white text-sm font-normal font-poppins'>Terms and Conditions</p>
-          <p className='py-1   text-white text-sm font-normal  leading-snug font-poppins'>Cancellation Policy</p>
+       <Link to={'/privacy-policy'}> <p className='py-1 text-white text-sm font-normal font-poppins'>Privacy Policy</p> </Link>  
+       <Link to={'/terms-and-conditions'}>  <p className='py-1 text-white text-sm font-normal font-poppins'>Terms and Conditions</p>  </Link> 
+        <Link to={'/cancellation-policy'}> <p className='py-1   text-white text-sm font-normal  leading-snug font-poppins'>Cancellation Policy</p></Link> 
         </div>
 
 

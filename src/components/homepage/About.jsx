@@ -25,7 +25,7 @@ const About = () => {
                
             <h2 className="text-lg font-semibold mb-2 font-poppins">{card.title}</h2>
 
-            <Link to="/"> 
+            <Link to="/about"> 
               <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 font-poppins">Read More</button>
             </Link> 
           </div>

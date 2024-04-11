@@ -32,7 +32,7 @@ function Navbar() {
 
    {/* middle navbar */}
 
-      <div className=' py-2 md:pt-4 px-4 max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto container '>
+      <div className=' py-4 md:pt-4 px-4 max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto container '>
 
         <div className="flex justify-between  items-center">
 
@@ -62,6 +62,8 @@ function Navbar() {
 <button className='bg-orange-500 font-roboto  px-6 py-2 text-white border-2 border-orange rounded-full'>  Donate Here</button>
 
 </Link>
+
+<Translate />
 
 
 
@@ -271,7 +273,17 @@ Home
       )}
 
 
-<Translate />
+
+{!isAuthenticated && (
+          <Link to={'/login'}  onClick={() => setDropdownOpen(false)} className="hidden font-roboto  md:block md:text-lg text-[16px] hover:text-orange text-black text-sm font-normal ">
+
+            <button className='lg:text-lg font-poppins text-orange-500     hover:text-orange text-sm font-bold '>  Login</button>
+          
+          </Link>
+        )} 
+
+
+
 
 
  

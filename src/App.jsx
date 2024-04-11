@@ -24,6 +24,9 @@ import OurHistory from "./components/pages/our history/OurHistory";
 import SuccessStories from "./components/pages/stories/SuccessStories";
 import SwamiDesk from "./components/pages/SwamiDesk";
 import MakeDonation from "./components/donation/MakeDonation";
+import PrivacyPolicy from "./components/pages/policy/PrivacyPolicy";
+import Terms from "./components/pages/policy/Terms";
+import Cancel from "./components/pages/policy/Cancel";
 
 // Custom PrivateRoute component
 const PrivateRoute = ({ element, ...rest }) => {
@@ -68,6 +71,13 @@ function App() {
 
         
         <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
+
+             
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path="/cancellation-policy" element={<Cancel />} />
+
+
       </Routes>
       <Footer />
       <Scroll />
