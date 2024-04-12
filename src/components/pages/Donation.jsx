@@ -1,8 +1,6 @@
 import React from 'react'
 
-import Donate from '../homepage/Donate'
 
-import ActivitiesCarousel from '../activities/ActivitesCarousel'
 
 const Donation = () => {
   return (
@@ -52,7 +50,7 @@ const Donation = () => {
     {/* donate */}
 
 
-<Donate />
+
 
 
 

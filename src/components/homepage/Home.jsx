@@ -1,42 +1,26 @@
-import React from 'react'
-import Header from '../header/Header'
-import WhatWeDo from './WhatWeDo'
+import React from "react";
+import Header from "../header/Header";
 
+import Introduction from "./Introduction";
+import About from "./About";
 
-
-
-
-import Introduction from './Introduction'
-import About from './About'
-
-import Support from './Support'
-import Facilities from './Facilities'
-
-
+import Support from "./Support";
+import Facilities from "./Facilities";
 
 const Home = () => {
   return (
     <div>
+      <Header />
 
-    
+      <Introduction />
 
-    <Header />
+      <About />
 
-       <Introduction />
+      <Facilities />
 
-       <About />
-
-     <Facilities />
-
-       <Support />
-
-        
-
-       
-
-   
+      <Support />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
