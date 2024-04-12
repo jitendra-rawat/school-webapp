@@ -18,17 +18,45 @@ const Support = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3 ,
+    slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000 
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      }
+    ]
   };
 
 
   return (
 
     <section className='bg-gray-100'>
-    <div className="lg:py-20 max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container">
+    <div className="py-10 lg:py-20 max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container">
       <h2 className='font-poppins lg:text-2xl mb-4 font-bold'>Support Us</h2>
       <Slider {...settings}>
         {cardsData.map((card, index) => (

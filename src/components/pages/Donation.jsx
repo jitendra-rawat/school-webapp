@@ -17,12 +17,14 @@ const Donation = () => {
     <h2 className='text-4xl font-poppins font-bold text-center mb-8'>Support Us</h2>
 
 
-   <div className="flex flex-col justify-between md:flex-row p-4  ">
+   <div className="flex flex-wrap justify-between md:flex-row p-4   ">
+
       {/* Left Section */}
-      <div className=" xl:p-4">
-        <h1 className=" mb-2 xl:w-[608px] text-gray-800 text-lg xl:text-2xl font-bold  xl:leading-[57.60px] font-poppins">Some services we provide for our children</h1>
+      <div className=" p-4 w-full xl:w-1/2">
+
+        <h1 className=" mb-2  text-gray-800 text-lg xl:text-2xl font-bold  xl:leading-[57.60px] font-poppins">Some services we provide for our children</h1>
        
-        <p className="font-poppins mb-4 xl:w-[608px] text-black text-lg font-normal text-justify">
+        <p className="font-poppins mb-4  text-black text-lg font-normal text-justify">
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus esse consequuntur numquam assumenda, quia recusandae maiores sed! Quas iusto natus libero corrupti ipsa sint veritatis culpa, nostrum doloremque illum aliquid veniam distinctio dignissimos optio, ut vero voluptatem inventore delectus animi dolorem ab nobis! Magnam impedit adipisci iure sapiente molestiae.
         </p>
         <ul className="list-disc pl-4">
@@ -35,7 +37,7 @@ const Donation = () => {
       </div>
 
       {/* Right Section with Placeholder Image */}
-      <div className=" p-4">
+      <div className=" p-4 w-full xl:w-1/2">
         <img
           src="https://via.placeholder.com/500"
           alt="Placeholder"

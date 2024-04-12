@@ -17,14 +17,15 @@ const About = () => {
 
 
     
-    <div className="lg:py-20  max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
+    <div className="py-12 lg:py-20  max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto container ">
     
      <h2 className='text-2xl font-bold font-poppins mb-8'>About Us</h2>
 
-     <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
+     <div className='flex flex-wrap lg:justify-between items-center gap-4'>
+
       {cardsData.map((card, index) => (
         <div key={index} className="">
-          <div className={`${card.color} rounded-lg pt-32 px-4 text-center lg:w-[250px] lg:h-[300px] cursor-pointer hover:scale-110`}>
+          <div className={`${card.color} my-4 rounded-lg pt-32 px-4 text-center w-[250px] h-[300px] cursor-pointer hover:scale-110`}>
 
             <div className="flex justify-center">{card.icon}</div> 
                
