@@ -25,13 +25,9 @@ const Donation = () => {
         <h1 className=" mb-2  text-gray-800 text-lg xl:text-2xl font-bold  xl:leading-[57.60px] font-poppins">Some services we provide for our children</h1>
        
         <p className="font-poppins mb-4  text-black text-lg font-normal text-justify">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus esse consequuntur numquam assumenda, quia recusandae maiores sed! Quas iusto natus libero corrupti ipsa sint veritatis culpa, nostrum doloremque illum aliquid veniam distinctio dignissimos optio, ut vero voluptatem inventore delectus animi dolorem ab nobis! Magnam impedit adipisci iure sapiente molestiae.
+        With your support, we can continue to illuminate the path for these bright young minds.Your generosity has the power to transform lives and create brighter futures for visually impaired children. Together, let's illuminate their path to success and ensure they have every opportunity to thrive. Thank you for your support!
         </p>
-        <ul className="list-disc pl-4">
-          <li className='text-black text-sm font-poppins font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
-          <li className='text-black text-sm font-poppins font-normal leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
-          <li className='text-black text-sm font-poppins font-normal  leading-[21px] py-2'>Sedut perspiciatis unde omnis iste natus voluptatem accusan tium dolore</li>
-        </ul>
+
     
       
       </div>
