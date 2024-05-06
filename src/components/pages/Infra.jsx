@@ -14,7 +14,7 @@ import InfraComp from "../infrastructure/InfraComp";
 
 const Card = ({ imageUrl, title, description }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md w-[400px] h-[550px] cursor-pointer">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md w-[400px] h-[700px] cursor-pointer">
       <img
         src={imageUrl}
         alt={title}
@@ -63,7 +63,9 @@ const cardData = [
     imageUrl: "https://via.placeholder.com/400",
     title: "Vocational Training",
     description:
-      "Since the Disabled Persons are educable, trainable and employable but with regular care and training. They can be successful professionals provided they get the right support and environment. Institute is putting their best efforts in every field by providing them(Blinds) all facilities required for achieving the above goal. ",
+      `We have vested with the complete facilities of providing education to the blinds using “Braille”. The education is based on the courses prescribed by the Government of Uttarakhand. Along with that our students are given skill based training in various handicrafts like making of Candles, Hindi-English typewriting, computer operation, different types of quality weaving and knitting, towels, bed-sheets, covers and dusters etc.
+
+      The blind children are also given training in Music both Vocal and Instrumental. The training include classical and other forms of music. They work on modern musical instruments, Tablas, Harmonium, Sitar, Dholak etc. The musical training is provided in accordance with the syllabus prescribed by the Board of School Education, Uttarakhand, CBSE and NCERT.`,
   },
 
 
@@ -74,7 +76,7 @@ const cardData = [
   {
     id: 7,
     imageUrl: "https://via.placeholder.com/400",
-    title: "Braille & Printing Books Library",
+    title: "Braille & Printed Books Library",
     description:
       "The school has a big library consisting of more than 2000 books in Braille Script for self reading and study by the blinds and also more than 1000 books for the study of the eyed students. In addition different types of daily News Paper and other periodical books/Magazie for enhancement & updatation of general knowledge and enjoyment & recreation of the blinds as well as eyed students are also available in the School Library.",
   },

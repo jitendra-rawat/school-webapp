@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 
 const Support = () => {
   const cardsData = [
-    { title: 'Support 1', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
-    { title: 'Support 2', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
-    { title: 'Support 3', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
-    { title: 'Support 4', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
-    { title: 'Support 5', color: 'bg-purple-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
-    { title: 'Support 6', color: 'bg-orange-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit ametLorem ipsum dolor sit amet' }
+    { title: 'Book a Meal', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
+    { title: 'Donate for Braillers', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
+    { title: 'Donate for a Musical Instrument', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
+    { title: 'Donate for Computer System', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
+    { title: 'Donate for School Uniform/Shoes', color: 'bg-purple-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet' },
+    { title: 'Donate for Braille Paper', color: 'bg-orange-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit ametLorem ipsum dolor sit amet' },
+    { title: 'Sponsor Child Education', color: 'bg-orange-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit ametLorem ipsum dolor sit amet' }
   ];
 
   const settings = {
@@ -63,8 +64,8 @@ const Support = () => {
           <div key={index} className=" ">
             <div className={`${card.color} rounded-lg p-8 cursor-pointer mx-2 w-[300px] h-[250px]` }>
               <h2 className="text-lg font-semibold mb-2 font-poppins">{card.title}</h2>
-              <p className="text-sm mb-4 font-poppins text-justify">{card.content}</p>
-         <Link to={'/donation'}>    <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-black">Read More</button></Link> 
+            
+         <Link to={'/make-donation'}>    <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-black">Donate Now</button></Link> 
             </div>
           </div>
         ))}

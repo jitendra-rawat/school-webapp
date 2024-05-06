@@ -28,7 +28,7 @@ function AboutUs() {
 
 
             <div className="lg:w-1/2">
-              <h2 className="font-poppins font-bold text-2xl mb-4">Our Founders</h2>
+              <h2 className="font-poppins font-bold text-2xl mb-4">Our Founder</h2>
               <p className="font-poppins text-justify">Inspired by the preaching’s of his renowned and revered spiritual GURU SRI SRI AKHANDANAND JI MAHARAJ who preached that service to the poor, helpless and disabled is real prayer to GOD. To fulfil his Guru’s preaching Swami Ajaranand ji Maharaj who himself was blind, established “SWAMI AJARANAND ANDH VIDYALAYA HIGH SCHOOL” on 30th May 1968 at Sapt Sarover , near the bank of holy river GANGA in religious city HARIDWAR, The Gateway To God. It is being governed by “Ajardham Mahila Ashram Trust” Sapt Sarover, Post-Sadhubela, Haridwar, which was constituted and established by Swamiji Maharaj himself on 1st January 1963 with the sole aim to rehabilitate the old, oppressed and helpless poor women who were neglected by the society, without giving any consideration to caste or creed.</p>
             </div>
 

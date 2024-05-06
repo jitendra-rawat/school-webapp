@@ -1,9 +1,11 @@
-// Footer.js
+
 
 import React from 'react';
 import { FaFacebook, FaInstagram, FaYoutube  } from "react-icons/fa";
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
+
+import map from '../assets/map.png'
 
 
 const Footer = () => {
@@ -34,6 +36,14 @@ const Footer = () => {
             <FaYoutube size={20} />
             </a>
           </div>
+
+
+          <div className='  mt-8 '>
+    <img className='object-cover ' src={map} alt="" />
+
+
+
+    </div>
         </div>
 
 
@@ -57,6 +67,9 @@ const Footer = () => {
        <Link to={'/terms-and-conditions'}>  <p className='py-1 text-white text-sm font-normal font-poppins'>Terms and Conditions</p>  </Link> 
         <Link to={'/cancellation-policy'}> <p className='py-1   text-white text-sm font-normal  leading-snug font-poppins'>Cancellation Policy</p></Link> 
         </div>
+
+
+
 
 
 

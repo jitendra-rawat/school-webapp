@@ -5,7 +5,7 @@ import { PiStudentFill } from "react-icons/pi";
 const About = () => {
 
   const cardsData = [
-    { title: 'Founders', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill   size={36}/> },
+    { title: 'Founder', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill   size={36}/> },
     { title: 'History', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
     { title: 'Mission', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
    

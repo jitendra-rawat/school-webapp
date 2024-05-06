@@ -1,4 +1,5 @@
 import React from 'react'
+import Support from '../homepage/Support'
 
 
 
@@ -22,7 +23,7 @@ const Donation = () => {
       {/* Left Section */}
       <div className=" p-4 w-full xl:w-1/2">
 
-        <h1 className=" mb-2  text-gray-800 text-lg xl:text-2xl font-bold  xl:leading-[57.60px] font-poppins">Some services we provide for our children</h1>
+       
        
         <p className="font-poppins mb-4  text-black text-lg font-normal text-justify">
         With your support, we can continue to illuminate the path for these bright young minds.Your generosity has the power to transform lives and create brighter futures for visually impaired children. Together, let's illuminate their path to success and ensure they have every opportunity to thrive. Thank you for your support!
@@ -45,7 +46,9 @@ const Donation = () => {
    </div>
 
 
-    {/* donate */}
+      {/* support us card */}
+
+      <Support />
 
 
 
