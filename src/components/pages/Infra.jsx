@@ -39,14 +39,14 @@ const cardData = [
   {
     id: 2,
     imageUrl: "https://via.placeholder.com/400",
-    title: "School Hostel For Blind Students",
+    title: " Hostel ",
     description:
       "Hostel building consists of 20 spacious big rooms with proper ventilation. Four blind students can share one room with their belongings comfortably. Pure drinking water, clean bathroom and toilet facilities are also available. In addition to this Solar Water Heater is being installed for supplying hot water to all residing in school and ashram campus, specially in Winter Season.",
   },
   {
     id: 8,
     imageUrl: "https://via.placeholder.com/400",
-    title: "Kitchen & Dining Hall",
+    title: "Mess and Kitchen",
     description:
       "Neat & clean kitchen is available for cooking of meals in which eco friendly LPG is being used as fuel. Adjacent to this kitchen there exist a very spacious Dining Hall which can accommodate 200 students for taking meals comfortably at a time. Water Cooler is being installed at out side the kitchen for supply of pure and cool water. ",
   },
@@ -54,14 +54,14 @@ const cardData = [
   {
     id: 5,
     imageUrl: "https://via.placeholder.com/400",
-    title: "Braille Press",
+    title: "Braille Press and Library",
     description:
       "Education is no longer remained a privilege of eyed people. It was thrown open to blind people by Louis Bralle.Braille Press has been installed which are being used to translate the all curriculum books as well as other spiritual books into Braille Scripts for the use of Blind Students. They can read, understand and than explain the facts mentioned in printed books to other people. It boost their morale and self confidence. ",
   },
   {
     id: 3,
     imageUrl: "https://via.placeholder.com/400",
-    title: "Empowering Blinds through Vocational Training",
+    title: "Vocational Training",
     description:
       "Since the Disabled Persons are educable, trainable and employable but with regular care and training. They can be successful professionals provided they get the right support and environment. Institute is putting their best efforts in every field by providing them(Blinds) all facilities required for achieving the above goal. ",
   },
