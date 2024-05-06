@@ -8,7 +8,7 @@ const About = () => {
     { title: 'Founders', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill   size={36}/> },
     { title: 'Mission', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
     { title: 'History', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
-    { title: 'Ashram and School', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill  size={36}/> }
+    { title: 'Special attraction', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill  size={36}/> }
   ];
 
   return (

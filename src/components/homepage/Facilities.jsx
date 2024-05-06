@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 
 const Facilities = () => {
   const cardsData = [
-    { title: 'Facilities 1', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Facilities 2', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Facilities 3', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Facilities 4', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Facilities 5', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Facilities 6', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }
+    { title: 'Free Education', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Hostel', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Mess and Kitchen', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Braille press and Library', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Vocational Education', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Computer Lab', color: 'bg-gray-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }
   ];
 
   const settings = {
@@ -60,10 +60,14 @@ const Facilities = () => {
         <Slider {...settings}>
           {cardsData.map((card, index) => (
             <div key={index} className=" ">
-              <div className={`${card.color} rounded-lg p-8 cursor-pointer shadow-lg mx-2 w-full md:w-[300px] h-[250px]`}>
-                <h2 className="text-lg font-semibold mb-2 font-poppins">{card.title}</h2>
-                <p className="text-sm mb-4 font-poppins">{card.content}</p>
+              <div className={`${card.color} flex flex-col justify-center rounded-lg p-8 cursor-pointer shadow-lg mx-2 w-full md:w-[300px] h-[250px]`}>
+                <h2 className="text-lg font-semibold mb-2 font-poppins text-center">{card.title}</h2>
+                {/* <p className="text-sm mb-4 font-poppins">{card.content}</p> */}
+
+                <div className='flex justify-center items-center'>
                 <Link to={'/our-infrastructure'}><button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-black">Read More</button></Link>
+                </div>
+               
               </div>
             </div>
           ))}
