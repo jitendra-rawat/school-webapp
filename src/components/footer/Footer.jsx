@@ -32,9 +32,7 @@ const Footer = () => {
             <FaInstagram size={20 } />
             </a>
 
-            <a href="https://www.youtube.com/" className="text-white hover:text-gray-300">
-            <FaYoutube size={20} />
-            </a>
+      
           </div>
 
 

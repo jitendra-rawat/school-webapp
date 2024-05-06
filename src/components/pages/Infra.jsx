@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import about from "../assets/about.png";
 import school from "../assets/school building.png";
-import hostel from "../assets/hostel.png";
+
 import temple from "../assets/temple.png";
 import press from "../assets/braillepress.png";
-import computer from "../assets/computer.png";
+
 import books from "../assets/braillebooks.png";
 import kitchen from "../assets/kitchen.png";
 import cows from "../assets/cows.png";
 import training from "../assets/vt.png";
 
 import InfraComp from "../infrastructure/InfraComp";
+
+
+import ins from '../assets/ins.jpg'
+import computer from '../assets/computer.png'
+import edu from '../assets/edu.png'
+import brail from '../assets/about.jpg'
+
+import braillbooks from '../assets/braillebooks.png'
 
 const Card = ({ imageUrl, title, description }) => {
   return (
@@ -31,7 +39,7 @@ const Card = ({ imageUrl, title, description }) => {
 const cardData = [
   {
     id: 1,
-    imageUrl: "https://via.placeholder.com/400",
+    imageUrl: edu,
     title: "Free Education",
     description:
       "Consist of 30 classrooms, one staffroom, one room for office and one room for Principal. In addition to this Computer library, Braille books & printing books library and Science, Home science and Maths laboratories also exists in separate rooms within school campus. Library and labs. Are being well maintained and have other facilities.",
@@ -53,7 +61,7 @@ const cardData = [
 
   {
     id: 5,
-    imageUrl: "https://via.placeholder.com/400",
+    imageUrl: braillbooks,
     title: "Braille Press and Library",
     description:
       "Education is no longer remained a privilege of eyed people. It was thrown open to blind people by Louis Bralle.Braille Press has been installed which are being used to translate the all curriculum books as well as other spiritual books into Braille Scripts for the use of Blind Students. They can read, understand and than explain the facts mentioned in printed books to other people. It boost their morale and self confidence. ",
@@ -75,7 +83,7 @@ const cardData = [
 
   {
     id: 7,
-    imageUrl: "https://via.placeholder.com/400",
+    imageUrl: brail,
     title: "Braille & Printed Books Library",
     description:
       "The school has a big library consisting of more than 2000 books in Braille Script for self reading and study by the blinds and also more than 1000 books for the study of the eyed students. In addition different types of daily News Paper and other periodical books/Magazie for enhancement & updatation of general knowledge and enjoyment & recreation of the blinds as well as eyed students are also available in the School Library.",

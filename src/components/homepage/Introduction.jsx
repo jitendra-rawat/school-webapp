@@ -1,4 +1,5 @@
 import React from 'react'
+import school from '../assets/school.jpg'
 
 const Introduction = () => {
   return (
@@ -18,7 +19,7 @@ Join us at our Blind School cum Ashram, where darkness is transformed into light
  {/* right section */}
 
  <div className='w-full lg:w-1/2 ' >
-<img className='object-cover'   src="https://placehold.co/600x400" alt="" />
+<img className='object-cover h-[350px]'   src={school} alt="" />
  </div>
             
 

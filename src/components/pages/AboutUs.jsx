@@ -7,6 +7,11 @@ import history2 from "../assets/history-2.png";
 import Accord from "../about/Accord";
 import Overview from "../about/Overview";
 
+import founder from '../assets/founder.jpg'
+
+
+
+
 function AboutUs() {
   return (
    
@@ -21,7 +26,7 @@ function AboutUs() {
           <div className="lg:py-10 flex flex-col lg:flex-row justify-between items-start lg:space-x-10">
 
             <div className="lg:w-1/2">
-              <img src="https://placehold.co/600x350" alt="" />
+              <img src={founder} alt="" />
 
             
             </div>
