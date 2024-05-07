@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PiStudentFill } from "react-icons/pi";
+import { FaHistory } from "react-icons/fa";
+import { FiTarget } from "react-icons/fi";
+import { GiByzantinTemple } from "react-icons/gi";
+import { FaUser } from "react-icons/fa";
 
 const About = () => {
 
   const cardsData = [
-    { title: 'Founder', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill   size={36}/> },
-    { title: 'History', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
-    { title: 'Mission', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill size={36}/> },
+    { title: 'Founder', color: 'bg-blue-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <FaUser   size={36}/> },
+    { title: 'History', color: 'bg-yellow-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <FaHistory size={36}/> },
+    { title: 'Mission', color: 'bg-green-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <FiTarget  size={36}/> },
    
-    { title: 'Special attraction', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <PiStudentFill  size={36}/> }
+    { title: 'Special attraction', color: 'bg-red-200', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: <GiByzantinTemple  size={36}/> }
   ];
 
   return (

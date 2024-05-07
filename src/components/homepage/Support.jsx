@@ -84,9 +84,9 @@ const Support = () => {
       <Slider {...settings}>
         {cardsData.map((card, index) => (
           <div key={index} className=" ">
-            <div className={` rounded-lg p-8 cursor-pointer mx-2 w-[300px] h-[450px]` }>
+            <div className={`mt-10 border border-gray-300 rounded-xl p-4 cursor-pointer mx-2 w-[300px] h-[450px]` }>
               <h2 className="text-base font-semibold mb-2 font-poppins text-center">{card.title}</h2>
-              <img src={card.image} alt={card.title} className="w-[300px] h-[300px] object-cover mb-2" /> 
+              <img src={card.image} alt={card.title} className="w-[300px] h-[300px] rounded-xl object-cover mb-8" /> 
               <Link to={'/make-donation'} className='flex justify-center my-auto '>    
                 <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-black">Donate Now</button>
               </Link> 
