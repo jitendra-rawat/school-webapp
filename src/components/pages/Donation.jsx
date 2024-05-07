@@ -18,7 +18,7 @@ const Donation = () => {
     <h2 className='text-4xl font-poppins font-bold text-center mb-8'>Support Us</h2>
 
 
-   <div className="flex flex-wrap justify-between md:flex-row p-4   ">
+   <div className="flex flex-wrap justify-between items-center md:flex-row p-4   ">
 
       {/* Left Section */}
       <div className=" p-4 w-full xl:w-1/2">
@@ -36,9 +36,9 @@ const Donation = () => {
       {/* Right Section with Placeholder Image */}
       <div className=" p-4 w-full xl:w-1/2">
         <img
-          src="https://via.placeholder.com/500"
+          src="https://img.freepik.com/free-vector/disabled-student-illustration_114360-18424.jpg?t=st=1715079689~exp=1715083289~hmac=c83f5869ef62b3126c361a0540af77d428f974b43a27564fc2af17420c4b77d6&w=826"
           alt="Placeholder"
-          className="w-[500px] h-[436px] rounded-[10px]"
+          className="w-[500px] h-[436px] rounded-[10px] object-cover"
         />
       </div>
     </div>
